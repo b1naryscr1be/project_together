@@ -1,0 +1,17 @@
+{% extends 'reina/base.html' %}
+
+{% block title %}Любимая жопа! | Ситуации{% endblock %}
+
+{% block content %}
+{% for object in object_list %}
+<h1>{{ object.title }}</h1>
+<p>{{ object.description }}</p>
+<p>{{ object.what_i_feel }}</p>
+<p>{{ object.what_i_think }}</p>
+<p>{{ object.what_i_do }}</p>
+<p>{{ object.what_i_want }}</p>
+{% endfor %}
+
+{% include 'registration/logout.html' %}
+
+{% endblock %}

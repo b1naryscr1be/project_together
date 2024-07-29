@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'reina.apps.ReinaConfig',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +121,5 @@ STATICFILES_DIRS = [PROJECT_DIR / 'static']
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = '/reina/'

@@ -1,0 +1,12 @@
+{% extends 'reina/base.html' %}
+
+{% block title %}Любимая жопа! | Добавить ситуацию{% endblock %}
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Добавить">
+</form>
+{% endblock %}
